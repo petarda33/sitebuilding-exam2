@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/style.css"/>
+  <style>
+    .grid {
+      display: grid;
+      border: dotted;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 20px;
+    }
+
+    .item {
+      background-color: blanchedalmond;
+    }
+
+  .item:first-of-type {
+    grid-row: 1 /3;
+    border: double;
+    background-color: aquamarine;
+  }
+
+  .item:nth-of-type(3) {
+    grid-column: 3 / 6;
+    border: double;
+    background-color: aquamarine;
+  }
+  .item:nth-of-type(10) {
+    grid-row: 3 / 6;
+    grid-column: 3 / 6;
+    border: double;
+    background-color: aquamarine;
+  }
+  .item:last-of-type {
+    grid-row: 4 / 6;
+    grid-column: 1 / 3;
+    border: double;
+    background-color: aquamarine;
+  }
+
+
+
+  </style>
+</head>
+<body>
+  <a href="second-task.html">Sztantics Péter</a>
+  
+  <div class="grid">
+    <div id="merged" class="item">merged</div>
+    <div class="item">1</div>
+    <div class="item" id="merged">merged</div>
+    <div class="item">1</div>
+    <div class="item">1</div>
+    <div class="item">1</div>
+    <div class="item">1</div>
+    <div class="item">1</div>
+    <div class="item">1</div>
+    <div class="item" id="merged">merged</div>
+    <div class="item" id="merged">merged</div>
+  </div>
+
+  <h3>To DO List!</h3>
+  <ol>
+    <li>Something</li>
+    <dd>to do</dd>
+    <li>Something</li>
+    <dd>to do</dd>
+    <li>Something</li>
+    <dd>to do</dd>
+    <li>Something</li>
+    <dd>to do</dd>
+    <li>Something</li>
+    <dd>to do</dd>
+    <li>Something</li>
+    <dd>to do</dd>
+    <li>Something</li>
+    <dd>to do</dd>
+    <li>Something</li>
+    <dd>to do</dd>
+    <li>Something</li>
+    <dd>to do</dd>
+    <li>Something</li>
+    <dd>to do</dd>
+  </ol>
+
+
+</body>
+</html>
